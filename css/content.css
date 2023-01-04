@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+}
+
+.templatePanel {
+    background-color: white;
+    min-height: 96px;
+    margin: 8px 0;
+    border-radius: 16px;
+}
