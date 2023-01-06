@@ -29,5 +29,6 @@ img {
 }
 
 th {
-    padding: 0 4px;
+    padding: 0 8px;
+    font-weight: 100;
 }
