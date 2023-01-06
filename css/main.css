@@ -27,3 +27,7 @@ img {
     object-fit: contain;
     width: 100%;
 }
+
+th {
+    padding: 0 4px;
+}
