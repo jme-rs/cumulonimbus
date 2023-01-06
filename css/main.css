@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    position:relative
+    position: relative;
 }
 
 body {
@@ -31,4 +31,9 @@ img {
 th {
     padding: 0 8px;
     font-weight: 100;
+}
+
+object {
+    width: 100%;
+    height: 100%;
 }

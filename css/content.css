@@ -5,6 +5,8 @@
     flex-direction: column;
     max-width: 1024px;
     padding: 8px 0 0;
+    width: 100%;
+    max-width: 1024px;
 }
 
 .templatePanel {
@@ -23,6 +25,7 @@
     padding: 8px;
     border-top: 1px  solid gainsboro;
     border-bottom: 1px  solid gainsboro;
+    overflow-x: scroll;
 }
 
 .aboutTable {
