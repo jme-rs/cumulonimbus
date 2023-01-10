@@ -30,7 +30,6 @@
 
 .calcButton:active{
     background-color: rgb(129, 129, 129);
-    transition: 0.5s;
 }
 
 .cOperand {
@@ -39,4 +38,8 @@
 
 .cClear {
     background-color: rgb(217, 202, 140);
+}
+
+.cColspan {
+    width: 100%;
 }
