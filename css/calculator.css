@@ -3,10 +3,19 @@
 .calculator {
     /* width: 300px; */
     border: 1px solid black;
+    padding: 5px;
+    /* display: flex;
+    justify-content: center; */
+    font-size: 30px;
 }
 
 .calcDisplay {
-
+    width: 90%;
+    height: 60px;
+    margin: 5px;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .calcButton {
@@ -18,9 +27,9 @@
 }
 
 .cOperand {
-
+    background-color: rgb(52, 171, 189);
 }
 
 .cClear {
-
+    background-color: rgb(217, 202, 140);
 }
