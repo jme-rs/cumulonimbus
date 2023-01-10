@@ -24,6 +24,7 @@
     font-size: 30px;
     height: 80px;
     width: 80px;
+    border-radius: 0;
 }
 
 .cOperand {
