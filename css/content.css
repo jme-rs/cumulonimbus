@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     max-width: 1024px;
-    padding: 8px 0 0;
+    padding: 8px 0;
     width: 100%;
     max-width: 1024px;
 }
@@ -30,4 +30,8 @@
 .aboutTable {
     font-size: 12px;
     opacity: 0.8;
+}
+
+.aboutTableTh {
+    padding: 0 8px;
 }

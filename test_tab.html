@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/globalHeader.css">
     <link rel="stylesheet" href="css/content.css">
 
+    <link rel="stylesheet" href="css/calculator.css">
+
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,9 +51,59 @@
     <div class="contentWrapper">
         <div class="templatePanel">test tab</div>
 
+
+
+
+        <div class="templateBoard">
+            calculator
+
+            <table class="calculator">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" class="calcDisplay" name="display" value="" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="calcButton" value="7" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton" value="8" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton" value="9" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton cOperand" value="/" class="operator" name="div_btn"
+                            onclick="get_calc(this)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="calcButton" value="4" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton" value="5" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton" value="6" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton cOperand" value="*" class="operator" name="multi_btn"
+                            onclick="get_calc(this)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="calcButton" value="1" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton" value="2" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton" value="3" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton cOperand" value="-" class="operator"
+                            onclick="get_calc(this)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="calcButton" value="0" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton cClear" value="C" onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton cOperand" value="=" class="equal"
+                            onclick="get_calc(this)"></td>
+                    <td><input type="button" class="calcButton cOperand" value="+" class="operator"
+                            onclick="get_calc(this)"></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+
+
     </div>
 
-    <script src="js/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 

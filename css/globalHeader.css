@@ -2,9 +2,9 @@
 
 #globalHeader {
     background-color: rgb(0, 178, 198);
-    position:sticky;
+    /* position:sticky;
     top: 0;
-    z-index: 128;
+    z-index: 128; */
 }
 
 .headerLabel {
