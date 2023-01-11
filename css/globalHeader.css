@@ -5,11 +5,18 @@
     /* position:sticky;
     top: 0;
     z-index: 128; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .headerLabel {
     display: flex;
     align-items: flex-end;
+
+    max-width: 1024px;
+    /* justify-content: center; */
 }
 
 .headerLabelContainer {
@@ -49,6 +56,8 @@
 
 .navigationTab {
     display: flex;
+
+    justify-content: center;
 }
 
 .navigationTabContainer {
@@ -57,6 +66,8 @@
     font-weight: 600;
     font-size: 14px;
     display: flex;
+
+    max-width: 100%;
 }
 
 .navigationTabContainer::-webkit-scrollbar {

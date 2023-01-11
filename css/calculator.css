@@ -40,6 +40,10 @@
     background-color: rgb(217, 202, 140);
 }
 
+.cFunction {
+    background-color: rgb(111, 178, 255);
+}
+
 .cColspan {
     width: 100%;
 }
