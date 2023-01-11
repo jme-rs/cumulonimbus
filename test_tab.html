@@ -40,9 +40,6 @@
                 <a class="tabItem" href="index.html">ホーム</a>
                 <a class="tabItem isActive" href="test_tab.html">___test_tab__></a>
                 <a class="tabItem" href="test_tab_code.html">___test_tab_code__></a>
-                <a class="tabItem" href="test_tab.html">___test_tab__></a>
-                <a class="tabItem" href="test_tab.html">___test_tab__></a>
-                <a class="tabItem" href="test_tab.html">___test_tab__></a>
                 <a class="tabItem" href="about.html">このサイトについて</a>
             </div>
         </div>
@@ -58,13 +55,9 @@
             <p>calculator</p>
             <p>乗算と除算を優先</p>
             <p>"2**3" ⇔ "2*2*2"</p>
-            <form name="calculator">
-                <table class="calculator">
-                    <tr>
-                        <td colspan="4">
-                            <input type="text" class="calcDisplay" name="display" value="" disabled>
-                        </td>
-                    </tr>
+            <form name="calculator" class="calculator">
+                <input type="text" class="calcDisplay" name="display" value="" disabled>
+                <table>
                     <tr>
                         <td><input type="button" class="calcButton cClear" value="C" onclick="calc(this)"></td>
                         <td><input type="button" class="calcButton cClear" value="←" onclick="calc(this)"></td>
@@ -90,8 +83,8 @@
                         <td><input type="button" class="calcButton cOperand" value="-" onclick="calc(this)"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="button" class="calcButton cColspan" value="0" onclick="calc(this)"></td>
-                        <!-- <td><input type="button" class="calcButton" value=" "></td> -->
+                        <td><input type="button" class="calcButton cOperand" value="." onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="0" onclick="calc(this)"></td>
                         <td><input type="button" class="calcButton cOperand" value="=" onclick="calc(this)"></td>
                         <td><input type="button" class="calcButton cOperand" value="+" onclick="calc(this)"></td>
                     </tr>

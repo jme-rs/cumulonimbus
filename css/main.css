@@ -1,15 +1,13 @@
 @charset "utf-8";
 
-input[type="submit"] {
-    appearance: none;
-    -webkit-appearance: none;
-}
-
 * {
     margin: 0;
     padding: 0;
     position: relative;
     color: black;
+
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 body {
@@ -18,11 +16,14 @@ body {
     flex-direction: column;
     font-family: "YakuHanJP";
     background: repeating-linear-gradient(-45deg,
-    rgb(235, 235, 235),
-    rgb(235, 235, 235) 1px,
-    rgb(240, 240, 240) 0,
-    rgb(240, 240, 240) 5px);
+            rgb(235, 235, 235),
+            rgb(235, 235, 235) 1px,
+            rgb(240, 240, 240) 0,
+            rgb(240, 240, 240) 5px);
     background-size: 1024px 1024px;
+
+    /* align-items: center; */
+    /* width: 100%; */
 }
 
 a {

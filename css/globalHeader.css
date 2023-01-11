@@ -16,7 +16,7 @@
     align-items: flex-end;
 
     max-width: 1024px;
-    /* justify-content: center; */
+    width: 100%;
 }
 
 .headerLabelContainer {
@@ -57,7 +57,8 @@
 .navigationTab {
     display: flex;
 
-    justify-content: center;
+    width: 100%;
+    /* justify-content: center; */
 }
 
 .navigationTabContainer {
@@ -67,7 +68,8 @@
     font-size: 14px;
     display: flex;
 
-    max-width: 100%;
+    /* max-width: 1024px; */
+    /* width: 100%; */
 }
 
 .navigationTabContainer::-webkit-scrollbar {
