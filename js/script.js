@@ -33,3 +33,19 @@ function calc(btn) {
         document.calculator.display.value += btn.value;
     }
 }
+
+fetch("text/SPutil.h").then(res => res.text()).then(text => {
+    document.getElementById("SPutil.h").textContent = text;
+});
+
+fetch("text/SPutil.c").then(res => res.text()).then(text => {
+    document.getElementById("SPutil.c").textContent = text;
+});
+
+fetch("text/FFT.h").then(res => res.text()).then(text => {
+    document.getElementById("FFT.h").textContent = text;
+});
+
+fetch("text/FFT.c").then(res => res.text()).then(text => {
+    document.getElementById("FFT.c").textContent = text;
+});

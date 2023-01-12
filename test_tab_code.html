@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/globalHeader.css">
     <link rel="stylesheet" href="css/content.css">
 
+    <link rel="stylesheet" href="css/codePrinter.css">
+    <!-- <link rel="stylesheet" href="css/tomorrow-night-eighties.css"> -->
+
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +26,6 @@
             <div class="headerLabelContainer">
                 <a class="cumulonimbus" href="index.html">cumulonimbus</a>
                 <div class="endHeader">
-                    <!-- <div class="loupeIconBox">
-                        <img src="picture/loupe.jpg">
-                    </div> -->
                     <input type="image" class="loupeIconBox" src="picture/loupe.jpg" id="mybtn">
                     <a class="siteIconBox" href="about.html">
                         <img src="picture/ei-cloud.png">
@@ -44,16 +44,36 @@
     </div>
 
     <div class="contentWrapper">
-        <div class="templateBoard">
-            <object data="text/FFT.c" type="text/plain" width="100%" height="100%"></object>
+
+
+
+        <div class="templatePanel">
+            SPutil.h
+            <div class="sourceView">
+                <code id="SPutil.h" class="prettyprint linenums"></code>
+            </div>
+            SPutil.c
+            <div class="sourceView">
+                <code id="SPutil.c" class="prettyprint"></code>
+            </div>
+            FFT.h
+            <div class="sourceView">
+                <code id="FFT.h" class="prettyprint"></code>
+            </div>
+            FFT.c
+            <div class="sourceView">
+                <code id="FFT.c" class="prettyprint"></code>
+            </div>
         </div>
+
+
 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
         integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert'></script>
 </body>
 
 </html>
