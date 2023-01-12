@@ -8,6 +8,8 @@
 
     appearance: none;
     -webkit-appearance: none;
+    opacity: 1;
+    -webkit-opacity: 1;
 }
 
 body {

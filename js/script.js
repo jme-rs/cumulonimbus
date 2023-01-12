@@ -34,18 +34,32 @@ function calc(btn) {
     }
 }
 
-fetch("text/SPutil.h").then(res => res.text()).then(text => {
-    document.getElementById("SPutil.h").textContent = text;
-});
+// fetch("text/SPutil.h").then(res => res.text()).then(text => {
+//     document.getElementById("SPutil.h").textContent = text;
+// });
 
-fetch("text/SPutil.c").then(res => res.text()).then(text => {
-    document.getElementById("SPutil.c").textContent = text;
-});
+// fetch("text/SPutil.c").then(res => res.text()).then(text => {
+//     document.getElementById("SPutil.c").textContent = text;
+// });
 
-fetch("text/FFT.h").then(res => res.text()).then(text => {
-    document.getElementById("FFT.h").textContent = text;
-});
+// fetch("text/FFT.h").then(res => res.text()).then(text => {
+//     document.getElementById("FFT.h").textContent = text;
+// });
 
-fetch("text/FFT.c").then(res => res.text()).then(text => {
-    document.getElementById("FFT.c").textContent = text;
-});
+var codeTags = document.getElementsByTagName("code");
+console.log(codeTags);
+
+// for (var codeTag in codeTags) {
+//     fetch(codeTag.dataset.path)
+//     .then(res => res.text())
+//     .then(text => {
+//         codeTag.textContent = text;
+//     });
+// }
+
+var codeTag = document.getElementById("codeId");
+fetch(codeTag.dataset.path)
+    .then(res => res.text())
+    .then(text => {
+        codeTag.textContent = text;
+    });
