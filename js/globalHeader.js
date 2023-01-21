@@ -1,9 +1,7 @@
 function activateItem(element) {
     var items = element.getElementsByClassName("tabItem")
     var path = location.pathname.replace("/", "").replace("homepage_1.0/", "");
-    console.log(path);
     for (var i = 0; i < items.length; ++i) {
-        console.log(items.item(i).getAttribute("href"));
         if (items.item(i).getAttribute("href") == path) {
             items.item(i).classList.add("isActive");
             break;
@@ -24,11 +22,11 @@ function loadHeader() {
             //
             var int = restxt.getElementById("globalHeader");
             document.getElementById("globalHeader").innerHTML = int.outerHTML;
-
             //
             var int = restxt.getElementById("navigationTab");
             activateItem(int);
             document.getElementById("navigationTab").innerHTML = int.outerHTML;
+            //
         }
     };
     xhr.send();

@@ -3,14 +3,16 @@ function loadSource(element) {
         method = "GET",
         url = element.getAttribute("data-path");
 
-    xhr.responseType = "document";
+    xhr.responseType = "text";
     xhr.open(method, url, true);
     xhr.send();
+    console.log(url);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr);
             var restxt = xhr.responseText;
             element.innerHTML = restxt;
+            // element.innerHTML = "\"" + restxt + "\"";
         }
     };
 }

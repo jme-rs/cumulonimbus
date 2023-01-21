@@ -20,7 +20,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp.min.css">
 
     <link rel="stylesheet" href="css/codePrinter.css">
+    <link rel="stylesheet" href="css/test_tab.css">
+
     <!-- <link rel="stylesheet" href="css/tomorrow-night-eighties.css"> -->
+    <script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert'></script>
+
 </head>
 
 <body>
@@ -43,25 +47,28 @@
                 </div>
             </div>
         </div>
+
         <div class="templateBoard">
-            #1
+            <div id="d1">
+                <input id="d2" type="text" value="enter a string">
+                <input id="d3" type="button" value="push">
+            </div>
             <div class="templatePanel">
-                #2
             </div>
         </div>
 
 
         <div class="templatePanel">
-                <code data-path="text/SPutil.h"></code>
+            <pre class="sourceViewBox prettyprint linenums">
+                <code data-path="text/SPutil.h" class="prettyprint linenums"></code>
+            </pre>
         </div>
-
 
 
     </div>
 
     <script src="js/codePrinter.js"></script>
-    <!-- <script src="js/codePrinter.js"></script> -->
-    <!-- <script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert'></script> -->
+    <script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert'></script>
 </body>
 
 </html>

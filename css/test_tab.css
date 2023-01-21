@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+#d1 {}
+
+#d2 {
+    width: 256px;
+    height: 40px;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 4px;
+    background-color: rgb(255, 242, 226);
+}
+
+#d3 {
+    width: 64px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#d3 :hover {
+    opacity: 0.7;
+    background-color: black;
+}
+
+#d3 :active {
+    top: 1px;
+}
