@@ -28,5 +28,5 @@ function setSearchButton() {
 }
 
 // functions
-setCodeFromPath();
+// setCodeFromPath();
 setSearchButton();

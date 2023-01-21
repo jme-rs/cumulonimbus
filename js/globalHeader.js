@@ -3,7 +3,7 @@ function activateItem(element) {
     var path = location.pathname;
     for (var i = 0; i < items.length; ++i) {
         if (items.item(i).getAttribute("href") == path) {
-            items.item(i).classList.add("isActive");
+            items.item(i).classList.add("isActive"); 
             break;
         }
     }

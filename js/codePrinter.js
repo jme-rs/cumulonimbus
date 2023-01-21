@@ -1,11 +1,22 @@
+function loadSource(element) {
+    var xhr = new XMLHttpRequest(),
+        method = "GET",
+        url = element.getAttribute("data-path");
+
+    xhr.responseType = "document";
+    xhr.open(method, url, true);
+    xhr.send();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr);
+            var restxt = xhr.responseText;
+            element.innerHTML = restxt;
+        }
+    };
+}
+
 var codeTags = document.getElementsByTagName("code");
-// console.log(codeTags.item(0).textContent);
+console.log(codeTags);
 for (var i = 0; i < codeTags.length; ++i) {
-    console.log(codeTags[i]);
-    fetch(codeTags.item(i).dataset.path)
-        .then(res => res.text())
-        .then(text => {
-            // console.log(text);
-            codeTags.item(i).textContent = text;
-        });
+    loadSource(codeTags.item(i))
 }
