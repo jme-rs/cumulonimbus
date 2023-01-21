@@ -3,117 +3,66 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>cumulonimbus - test_tab</title>
+    <meta name="viewport" content="width=device-width">
+    <title>cumulonimbus - 成果物</title>
     <link rel="icon" href="picture/ei-cloud.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/globalHeader.css">
     <link rel="stylesheet" href="css/content.css">
 
-    <link rel="stylesheet" href="css/calculator.css">
-
-    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp.min.css">
+
+    <link rel="stylesheet" href="css/codePrinter.css">
+    <!-- <link rel="stylesheet" href="css/tomorrow-night-eighties.css"> -->
 </head>
 
 <body>
-    <div id="globalHeader">
-        <div class="headerLabel">
-            <div class="headerLabelContainer">
-                <a class="cumulonimbus" href="index.html">cumulonimbus</a>
-                <div class="endHeader">
-                    <!-- <div class="loupeIconBox">
-                        <img src="picture/loupe.jpg">
-                    </div> -->
-                    <input type="image" class="loupeIconBox" src="picture/loupe.jpg" id="mybtn">
-                    <a class="siteIconBox" href="about.html">
-                        <img src="picture/ei-cloud.png">
-                    </a>
+
+    <div id="globalHeader"></div>
+    <div id="navigationTab"></div>
+    <script src="js/globalHeader.js"></script>
+    <script>loadHeader();</script>
+
+    <div class="contentWrapper">
+
+        <div class="templatePanel">templatePanel</div>
+        <div class="templateBoard">templateBoard</div>
+        <div class="templatePanel">
+            #1
+            <div class="templateBoard">
+                #2
+                <div class="templatePanel">
+                    #3
                 </div>
             </div>
         </div>
-        <div class="navigationTab">
-            <div class="navigationTabContainer">
-                <a class="tabItem" href="index.html">ホーム</a>
-                <a class="tabItem isActive" href="test_tab.html">___test_tab__></a>
-                <a class="tabItem" href="test_tab_code.html">___test_tab_code__></a>
-                <a class="tabItem" href="about.html">このサイトについて</a>
+        <div class="templateBoard">
+            #1
+            <div class="templatePanel">
+                #2
             </div>
         </div>
-    </div>
 
-    <div class="contentWrapper">
-        <div class="templatePanel">test tab</div>
-
-
-
-
-        <div class="templateBoard">
-            <p>calculator</p>
-            <p>乗算と除算を優先</p>
-            <p>"2**3" ⇔ "2*2*2"</p>
-            <form name="calculator" class="calculator">
-                <input type="text" class="calcDisplay" name="display" value="" disabled>
-                <table>
-                    <tr>
-                        <td><input type="button" class="calcButton cClear" value="C" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cClear" value="←" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value="(" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value=")" onclick="calc(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="calcButton" value="7" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="8" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="9" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value="/" onclick="calc(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="calcButton" value="4" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="5" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="6" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value="*" onclick="calc(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="calcButton" value="1" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="2" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="3" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value="-" onclick="calc(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="calcButton cOperand" value="." onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="0" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value="=" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cOperand" value="+" onclick="calc(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="calcButton cFunction" value="√" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cFunction" value="sin" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cFunction" value="cos" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cFunction" value="tan" onclick="calc(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="calcButton" value="π" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton" value="e" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cFunction" value="logE" onclick="calc(this)"></td>
-                        <td><input type="button" class="calcButton cFunction" value="log10" onclick="calc(this)"></td>
-                    </tr>
-                </table>
-            </form>
-
+        <div class="templatePanel">
+            <div class="sourceViewBox">
+                <code data-path="text/SPutil.h"></code>
+            </div>
         </div>
 
 
 
-
-
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
-        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <!-- <script src="js/codePrinter.js"></script> -->
+    <!-- <script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert'></script> -->
 </body>
 
 </html>

@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <title>cumulonimbus - このサイトについて</title>
     <link rel="icon" href="picture/ei-cloud.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/globalHeader.css">
     <link rel="stylesheet" href="css/content.css">
 
-    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
@@ -18,48 +21,35 @@
 </head>
 
 <body>
-    <div id="globalHeader">
-        <div class="headerLabel">
-            <div class="headerLabelContainer">
-                <a class="cumulonimbus" href="index.html">cumulonimbus</a>
-                <div class="endHeader">
-                    <!-- <div class="loupeIconBox">
-                        <img src="picture/loupe.jpg">
-                    </div> -->
-                    <input type="image" class="loupeIconBox" src="picture/loupe.jpg" id="mybtn">
-                    <a class="siteIconBox" href="about.html">
-                        <img src="picture/ei-cloud.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="navigationTab">
-            <div class="navigationTabContainer">
-                <a class="tabItem" href="index.html">ホーム</a>
-                <a class="tabItem" href="test_tab.html">___test_tab__></a>
-                <a class="tabItem" href="test_tab_code.html">___test_tab_code__></a>
-                <a class="tabItem isActive" href="test_tab.html">このサイトについて</a>
-            </div>
-        </div>
-    </div>
+
+    <div id="globalHeader"></div>
+    <div id="navigationTab"></div>
+    <script src="js/globalHeader.js"></script>
+    <script>loadHeader();</script>
 
     <div class="contentWrapper">
         <div class="templateBoard">
             <table class="aboutTable">
                 <tr>
-                    <th class="aboutTableTh">概要</th>
+                    <th class="aboutTableTh">概要</th><td>:</td>
                     <td>自作練習用サイト</td>
                 </tr>
                 <tr>
-                    <th class="aboutTableTh">目的</th>
+                    <th class="aboutTableTh">目的</th><td>:</td>
                     <td>html, css, javascript 練習</td>
                 </tr>
                 <tr>
-                    <th class="aboutTableTh">制作開始</th>
+                    <th class="aboutTableTh">制作開始</th><td>:</td>
                     <td>2023/1/3</td>
                 </tr>
                 <tr>
-                    <th class="aboutTableTh">制作者</th>
+                    <th class="aboutTableTh">最終更新</th><td>:</td>
+                    <td style="text-decoration: underline;">
+                        <a href="/updateLog.html">更新履歴</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="aboutTableTh">制作者</th><td>:</td>
                     <td>佐々木 孟</td>
                 </tr>
             </table>
@@ -67,8 +57,6 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
-        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 

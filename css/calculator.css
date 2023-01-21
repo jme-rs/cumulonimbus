@@ -16,6 +16,16 @@
     font-size: 20px;
 }
 
+.calcVariableDisplay {
+    margin: 0 5px;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 4px;
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
 .calcButton {
     background-color: rgb(226, 226, 226);
     border: 0;
@@ -43,4 +53,12 @@
 
 .cColspan {
     width: 100%;
+}
+
+.cVariable {
+    background-color: rgb(157, 253, 157);
+}
+
+.cCalc {
+    background-color: rgb(255, 83, 36);
 }

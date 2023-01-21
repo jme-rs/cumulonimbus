@@ -12,16 +12,16 @@
 
 .templatePanel {
     background-color: white;
-    min-height: 96px;
+    min-height: 32px;
     margin: 8px 8px;
     padding: 8px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: 1px solid gainsboro;
 }
 
 .templateBoard {
     background-color: white;
-    min-height: 96px;
+    min-height: 32px;
     margin: 8px 0;
     padding: 8px;
     border-top: 1px  solid gainsboro;
@@ -35,4 +35,18 @@
 
 .aboutTableTh {
     padding: 0 8px;
+}
+
+.articleBox {
+
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px
+}
+
+.indentBox {
+    margin-left: 16px;
+    margin-bottom: 16px;
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>cumulonimbus - test_tab</title>
+    <link rel="icon" href="picture/ei-cloud.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/globalHeader.css">
+    <link rel="stylesheet" href="css/content.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp.min.css">
+
+
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+
+    <div id="globalHeader"></div>
+    <div id="navigationTab"></div>
+    <script src="js/globalHeader.js"></script>
+    <script>loadHeader();</script>
+
+    <div class="contentWrapper">
+
+
+        <div class="templateBoard">
+            <p>calculator</p>
+            <p>乗算と除算を優先</p>
+            <p>"2**3" ⇔ "2*2*2"</p>
+            <p>xに3を代入 ⇔ "x=3"</p>
+            <p>"Enter!" で計算, "=" は代入用</p>
+            <form name="calculator" class="calculator">
+                <input type="text" class="calcDisplay" name="display" value="" disabled>
+                <input type="text" class="calcVariableDisplay" name="variableDisplay" value="" disabled>
+                <table>
+                    <tr>
+                        <td><input type="button" class="calcButton cClear" value="C" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cClear" value="←" onclick="calc(this)"></td>
+                        <td colspan="2"><input type="button" class="calcButton cCalc cColspan" value="Enter!" onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton" value="7" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="8" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="9" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value="/" onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton" value="4" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="5" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="6" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value="*" onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton" value="1" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="2" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="3" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value="-" onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton" value="0" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value="(" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value=")" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value="+" onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton cVariable" value="x" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cVariable" value="y" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cVariable" value="=" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cOperand" value="." onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton cFunction" value="√" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cFunction" value="sin" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cFunction" value="cos" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cFunction" value="tan" onclick="calc(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="calcButton" value="π" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton" value="e" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cFunction" value="logE" onclick="calc(this)"></td>
+                        <td><input type="button" class="calcButton cFunction" value="log10" onclick="calc(this)"></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

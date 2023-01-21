@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.sourceView {
+.sourceViewBox {
     overflow: scroll;
     max-height: 400px;
     border: 1px solid black;
