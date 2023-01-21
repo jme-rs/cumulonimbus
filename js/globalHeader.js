@@ -1,6 +1,6 @@
 function activateItem(element) {
     var items = element.getElementsByClassName("tabItem")
-    var path = location.pathname.replace("/", "");
+    var path = location.pathname.replace("/", "").replace("homepage_1.0/", "");
     console.log(path);
     for (var i = 0; i < items.length; ++i) {
         console.log(items.item(i).getAttribute("href"));
