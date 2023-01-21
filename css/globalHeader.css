@@ -5,7 +5,9 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+
+    width: 100%;
 }
 
 .headerLabel {
@@ -59,7 +61,7 @@
     position: sticky;
     top: 0;
     z-index: 128;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .navigationTabContainer {
@@ -68,9 +70,6 @@
     font-weight: 600;
     font-size: 14px;
     display: flex;
-
-    /* max-width: 1024px; */
-    /* width: 100%; */
 }
 
 .navigationTabContainer::-webkit-scrollbar {
