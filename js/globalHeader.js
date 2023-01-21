@@ -1,9 +1,9 @@
 function activateItem(element) {
     var items = element.getElementsByClassName("tabItem")
-    var path = location.pathname;
+    var path = location.pathname.replace("/", "");
     for (var i = 0; i < items.length; ++i) {
         if (items.item(i).getAttribute("href") == path) {
-            items.item(i).classList.add("isActive"); 
+            items.item(i).classList.add("isActive");
             break;
         }
     }
@@ -12,7 +12,7 @@ function activateItem(element) {
 function loadHeader() {
     var xhr = new XMLHttpRequest(),
         method = "GET",
-        url = "/html/globalHeader.html";
+        url = "html/globalHeader.html";
 
     xhr.responseType = "document";
     xhr.open(method, url, true);
