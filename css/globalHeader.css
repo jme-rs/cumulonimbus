@@ -61,7 +61,7 @@
     top: 0;
     z-index: 128;
     justify-content: center;
-    box-shadow: 0 6px 4px 0 rgba(116, 116, 116, 0.3);
+    box-shadow: 0 6px 4px 0 rgba(148, 148, 148, 0.3);
     overflow: hidden;
 }
 
