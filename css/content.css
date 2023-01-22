@@ -49,16 +49,7 @@
     margin-bottom: 16px;
 }
 
-.yoko-scroll {
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.yoko-scroll::-webkit-scrollbar {
-    display: none;
-}
-
-.yoko-scroll:active {
-    cursor: grabbing;
+.imgBox {
+    /* border: 2px solid rgb(125, 125, 125);
+    border-radius: 4px; */
 }
