@@ -17,11 +17,8 @@ function applyHorizontalScroll() {
     var moving;
     var speed = 40;
     $('.horizontal-scroll').mousewheel(function (event, mov) {
-        //  スクロール後の位置の算出
         var moving = $(this).scrollLeft() - mov * speed;
-        // スクロールする
         $(this).scrollLeft(moving);
-        // 縦スクロールさせない
         return false;
     });
     console.log("applyHorizontalScroll");
@@ -45,7 +42,6 @@ function itemHoverEvent() {
     console.log("itemHoverEvent");
 }
 
-
 function loadHeader() {
     var xhr = new XMLHttpRequest(),
         method = "GET",
@@ -67,9 +63,9 @@ function loadHeader() {
             console.log("loadHeader");
 
 
-            activateItem();
             setSearchButton();
             applyHorizontalScroll();
+            activateItem();
             itemHoverEvent();
         }
     };
