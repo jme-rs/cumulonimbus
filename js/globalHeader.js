@@ -31,6 +31,23 @@ function setSearchButton() {
     console.log(document.getElementById("setSearchButton"));
 }
 
+function itemHoverEvent() {
+    $(".tabItem").hover(
+        function () {
+            $(this).css("opacity", "1");
+        },
+        function () {
+            $(this).css("opacity", "0.6");
+        });
+    $(".isActive").hover(
+        function () {
+            $(this).css("opacity", "1");
+        },
+        function () {
+            $(this).css("opacity", "1");
+        });
+}
+
 
 function loadHeader() {
     var xhr = new XMLHttpRequest(),
@@ -56,6 +73,7 @@ function loadHeader() {
             activateItem();
             setSearchButton();
             applyHorizontalScroll();
+            itemHoverEvent();
         }
     };
     xhr.send();

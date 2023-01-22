@@ -85,6 +85,10 @@
     display: flex;
 }
 
+.tabItem :hover {
+    color: rgb(150, 150, 150);
+}
+
 .isActive {
     opacity: 1;
     margin: 8px 16px 0;
