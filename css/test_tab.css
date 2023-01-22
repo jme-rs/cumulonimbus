@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-#d1 {}
+#d1 {
+    display: flex;
+    padding: 16px;
+}
 
 #d2 {
     width: 256px;
@@ -11,17 +14,23 @@
 }
 
 #d3 {
+    width: 60px;
+    height: 36px;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid black;
+    border-bottom: 8px solid rgb(127, 126, 126);
+    border-radius: 4px;
+    transition-duration: 100ms;
+}
+
+#d3:active {
+    background-color: rgb(156, 156, 156);
+    border-bottom: 1px solid black;
+    top: 7px;
+}
+
+#d4 {
+    padding-left: 16px;
     width: 64px;
     height: 40px;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-#d3 :hover {
-    opacity: 0.7;
-    background-color: black;
-}
-
-#d3 :active {
-    top: 1px;
 }

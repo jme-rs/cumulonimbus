@@ -46,6 +46,7 @@ function itemHoverEvent() {
         function () {
             $(this).css("opacity", "1");
         });
+    console.log("itemHoverEvent");
 }
 
 

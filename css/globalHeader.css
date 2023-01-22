@@ -83,10 +83,7 @@
     align-items: center;
     white-space: nowrap;
     display: flex;
-}
-
-.tabItem :hover {
-    color: rgb(150, 150, 150);
+    transition-duration: 180ms;
 }
 
 .isActive {
