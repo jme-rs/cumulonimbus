@@ -1,13 +1,15 @@
 function activateItem() {
     var items = document.getElementsByClassName("tabItem")
-    var path = location.pathname.replace("/", "").replace("cumuloninbus/", "");
+    var path = location.pathname.replace("/", "").replace("cumulonimbus/", "");
     for (var i = 0; i < items.length; ++i) {
-        if (items.item(i).getAttribute("href") == path) {
+        var urlNow = items.item(i).getAttribute("href");
+        if (urlNow == path) {
             items.item(i).classList.add("isActive");
             break;
         }
-        else if (path == "" && items.item(i).getAttribute("href") == "index.html") {
+        else if (path == "" && urlNow == "index.html") {
             items.item(i).classList.add("isActive");
+            break;
         }
     }
     console.log("activateItem");
