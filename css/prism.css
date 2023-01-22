@@ -6,8 +6,7 @@ pre[class*=language-] {
     background: 0 0;
     text-shadow: 0 1px rgba(0, 0, 0, .3);
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    /*  */
-    font-size: 14px;
+    font-size: 1em;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -119,7 +118,7 @@ pre[class*=language-] {
 pre[class*=language-].line-numbers {
     position: relative;
     padding-left: 16px;
-    counter-reset: linenumber;
+    counter-reset: linenumber
 }
 
 pre[class*=language-].line-numbers>code {
@@ -151,7 +150,6 @@ pre[class*=language-].line-numbers>code {
     content: counter(linenumber);
     color: #999;
     display: block;
-    /*  */
     padding-right: .8em;
     text-align: right
 }

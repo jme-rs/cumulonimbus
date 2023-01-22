@@ -1,5 +1,5 @@
-function activateItem(element) {
-    var items = element.getElementsByClassName("tabItem")
+function activateItem() {
+    var items = document.getElementsByClassName("tabItem")
     var path = location.pathname.replace("/", "").replace("homepage_1.0/", "");
     for (var i = 0; i < items.length; ++i) {
         if (items.item(i).getAttribute("href") == path) {
@@ -7,6 +7,7 @@ function activateItem(element) {
             break;
         }
     }
+    console.log("activateItem");
 }
 
 function applyHorizontalScroll() {
@@ -47,12 +48,12 @@ function loadHeader() {
             document.getElementById("globalHeader").innerHTML = int.outerHTML;
             //
             var int = restxt.getElementById("navigationTab");
-            activateItem(int);
             document.getElementById("navigationTab").innerHTML = int.outerHTML;
             //
             console.log("loadHeader");
 
-            
+
+            activateItem();
             setSearchButton();
             applyHorizontalScroll();
         }

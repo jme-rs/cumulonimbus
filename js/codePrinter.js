@@ -22,3 +22,4 @@ console.log(codeTags);
 for (var i = 0; i < codeTags.length; ++i) {
     loadSource(codeTags.item(i))
 }
+runPrism();
