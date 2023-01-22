@@ -9,10 +9,10 @@ function loadSource(element) {
     console.log(url);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log(xhr);
             var restxt = xhr.responseText;
             element.innerHTML = restxt;
             // element.innerHTML = "\"" + restxt + "\"";
+            console.log(loadSource);
         }
     };
 }

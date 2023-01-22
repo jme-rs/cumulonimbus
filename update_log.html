@@ -7,8 +7,9 @@
     <title>cumulonimbus - 更新履歴</title>
     <link rel="icon" href="picture/ei-cloud.png">
 
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/globalHeader.css">
@@ -28,6 +29,54 @@
     <script>loadHeader();</script>
 
     <div class="contentWrapper">
+
+        <div class="templatePanel">
+            <div class="articleBox">
+                <div class="date">2023-01-22</div>
+                <div class="templateBoard">
+
+                    <h4>・修正</h4>
+                    <div class="indentBox">
+                        <p>・検索ボタンを押すとログが出る。</p>
+                    </div>
+                </div>
+
+                <div class="templateBoard">
+                    <h4>・問題</h4>
+                    <div class="indentBox">
+                        <p>・ソースにprismが効かない。</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="templatePanel">
+            <div class="articleBox">
+                <div class="date">2023-01-22</div>
+                <div class="templateBoard">
+
+                    <h4>・グローバルヘッダー</h4>
+                    <div class="indentBox">
+                        <p>・はみ出したときにマウスホイールでの横スクロールに対応。</p>
+                    </div>
+
+                    <h4>・ソースコード領域</h4>
+                    <div class="indentBox">
+                        <p>・ディレクトリからの読み込みに成功。</p>
+                    </div>
+
+                </div>
+                <div class="templateBoard">
+
+                    <h4>・問題</h4>
+                    <div class="indentBox">
+                        <p>・ソースコードの横方向のマウスドラッグができない。</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="templatePanel">
             <div class="articleBox">
@@ -70,7 +119,6 @@
 
     </div>
 
-    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,5 @@
 @charset "utf-8";
 
 .sourceViewBox {
-    overflow: scroll;
     max-height: 400px;
-    border: 1px solid rgb(110, 110, 110);
-    border-radius: 4px;
-}
-
-code {
-    /* white-space: pre;
-    line-height: 0; */
-}
-
-.prettyprint {
-
 }

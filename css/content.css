@@ -24,8 +24,8 @@
     min-height: 32px;
     margin: 8px 0;
     padding: 8px;
-    border-top: 1px  solid gainsboro;
-    border-bottom: 1px  solid gainsboro;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
 }
 
 .aboutTable {
@@ -37,9 +37,7 @@
     padding: 0 8px;
 }
 
-.articleBox {
-
-}
+.articleBox {}
 
 .date {
     color: rgba(0, 0, 0, 0.6);
@@ -49,4 +47,18 @@
 .indentBox {
     margin-left: 16px;
     margin-bottom: 16px;
+}
+
+.yoko-scroll {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.yoko-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.yoko-scroll:active {
+    cursor: grabbing;
 }
