@@ -34,10 +34,12 @@
     height: 50px;
     width: 80px;
     border-radius: 0;
+    transition-duration: 200ms;
 }
 
 .calcButton:active{
     background-color: rgb(129, 129, 129);
+    transition-duration: 200ms;
 }
 
 .cOperand {

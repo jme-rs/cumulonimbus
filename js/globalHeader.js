@@ -1,10 +1,13 @@
 function activateItem() {
     var items = document.getElementsByClassName("tabItem")
-    var path = location.pathname.replace("/", "").replace("homepage_1.0/", "");
+    var path = location.pathname.replace("/", "").replace("cumuloninbus/", "");
     for (var i = 0; i < items.length; ++i) {
         if (items.item(i).getAttribute("href") == path) {
             items.item(i).classList.add("isActive");
             break;
+        }
+        else if (path == "" && items.item(i).getAttribute("href") == "index.html") {
+            items.item(i).classList.add("isActive");
         }
     }
     console.log("activateItem");
@@ -32,19 +35,12 @@ function setSearchButton() {
 }
 
 function itemHoverEvent() {
-    $(".tabItem").hover(
+    $("[class='tabItem']").hover(
         function () {
             $(this).css("opacity", "1");
         },
         function () {
             $(this).css("opacity", "0.6");
-        });
-    $(".isActive").hover(
-        function () {
-            $(this).css("opacity", "1");
-        },
-        function () {
-            $(this).css("opacity", "1");
         });
     console.log("itemHoverEvent");
 }
