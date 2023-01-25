@@ -69,7 +69,10 @@ function loadHeader() {
             applyHorizontalScroll();
             activateItem();
             itemHoverEvent();
+            document.getElementsByTagName('body')[0].setAttribute('ontouchstart', '');
         }
     };
     xhr.send();
 }
+
+loadHeader();

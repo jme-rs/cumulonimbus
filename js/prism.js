@@ -16,6 +16,23 @@ function runPrism() {
     console.log("runPrism");
 }
 
+function htmlspecialchars(unsafeText) {
+    return unsafeText.replace(
+        /[&'`"<>]/g,
+        function (match) {
+            return {
+                '&': '&amp;',
+                "'": '&#x27;',
+                '`': '&#x60;',
+                '"': '&quot;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '\n': '<br>'
+            }[match]
+        }
+    );
+}
+
 function loadSource(element) {
     var xhr = new XMLHttpRequest(),
         method = "GET",
@@ -28,10 +45,10 @@ function loadSource(element) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var restxt = xhr.responseText;
-            element.innerHTML = restxt;
-            // element.innerHTML = "\"" + restxt + "\"";
+            element.innerHTML = htmlspecialchars(restxt);
+            // element.innerHTML = restxt;
             console.log("loadSource");
-            runPrism()
+            runPrism();
         }
     };
 }

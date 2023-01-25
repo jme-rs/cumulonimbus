@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     position: relative;
-    color: black;
 
     appearance: none;
     -webkit-appearance: none;
@@ -30,6 +29,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 img {
