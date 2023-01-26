@@ -38,8 +38,6 @@
     padding: 0 8px;
 }
 
-.articleBox {}
-
 .date {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px
@@ -75,4 +73,13 @@
     max-height: 400px;
     overflow-x: auto;
     overflow: scroll;
+}
+
+@media (max-width: 500px) {
+    .sourceViewBox {
+        max-width: min-content;
+        max-height: 300px;
+        overflow-x: auto;
+        overflow: scroll;
+    }
 }
