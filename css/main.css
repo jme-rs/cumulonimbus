@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    position: relative;
+    /* position: relative; */
 
     appearance: none;
     -webkit-appearance: none;
@@ -22,9 +22,8 @@ body {
             rgb(240, 240, 240) 0,
             rgb(240, 240, 240) 5px);
     background-size: 1024px 1024px;
-
     align-items: center;
-    /* width: 100%; */
+    overflow: scroll;
 }
 
 a {
@@ -35,7 +34,7 @@ a {
 img {
     object-fit: contain;
     width: 100%;
-    max-width: 512px;
+    display: block;
 }
 
 th {

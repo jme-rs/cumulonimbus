@@ -17,6 +17,7 @@
     padding: 8px;
     border-radius: 8px;
     border: 1px solid gainsboro;
+    box-shadow: 0 0 6px rgba(100, 100, 100, 0.2);
 }
 
 .templateBoard {
@@ -50,6 +51,28 @@
 }
 
 .imgBox {
-    /* border: 2px solid rgb(125, 125, 125);
-    border-radius: 4px; */
+    margin: 16px 0;
+    box-shadow: inset 0 0 5px rgb(100, 100, 100);
+    border-radius: 8px;
+    max-width: 512px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sourceViewBox {
+    max-width: min-content;
+    max-height: 400px;
+    overflow-x: auto;
+    overflow: scroll;
 }

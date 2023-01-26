@@ -6,7 +6,7 @@ pre[class*=language-] {
     background: 0 0;
     text-shadow: 0 1px rgba(0, 0, 0, .3);
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 1em;
+    font-size: 14px;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -19,14 +19,14 @@ pre[class*=language-] {
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none
+    hyphens: none;
 }
 
 pre[class*=language-] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    border-radius: .3em
+    border-radius: .3em;
 }
 
 :not(pre)>code[class*=language-],
@@ -117,7 +117,7 @@ pre[class*=language-] {
 
 pre[class*=language-].line-numbers {
     position: relative;
-    padding-left: 16px;
+    padding-left: 64px;
     counter-reset: linenumber
 }
 
@@ -131,8 +131,8 @@ pre[class*=language-].line-numbers>code {
     pointer-events: none;
     top: 0;
     font-size: 100%;
-    left: -3.8em;
-    width: 3em;
+    left: -170px;
+    /* width: 3em; */
     letter-spacing: -1px;
     border-right: 1px solid #999;
     -webkit-user-select: none;

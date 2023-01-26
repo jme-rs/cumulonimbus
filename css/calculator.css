@@ -2,9 +2,11 @@
 
 .calculator {
     width:min-content;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 5px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgb(100, 100, 100);
 }
 
 .calcDisplay {
@@ -21,7 +23,7 @@
     margin: 0 5px;
     border: 1px solid rgb(120, 120, 120);
     border-radius: 4px;
-    width: 200px;
+    width: 300px;
     height: 20px;
     text-align: center;
     font-size: 16px;
@@ -35,6 +37,7 @@
     width: 80px;
     border-radius: 0;
     transition-duration: 200ms;
+    color: rgb(60, 60, 60);
 }
 
 .calcButton:active{

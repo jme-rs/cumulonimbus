@@ -62,7 +62,6 @@
     z-index: 128;
     justify-content: center;
     box-shadow: 0 6px 4px 0 rgba(148, 148, 148, 0.3);
-    overflow: hidden;
 }
 
 .navigationTabContainer {

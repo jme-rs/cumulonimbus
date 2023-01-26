@@ -11,7 +11,7 @@ let fList = new Map([
 ]);
 
 var x = 0, y = 0;
-document.calculator.variableDisplay.value = "x = " + eval("x") + ", y = " + eval("y");
+document.calculator.variableDisplay.value = "var: x = " + eval("x") + ", y = " + eval("y");
 
 function calc(btn) {
     if (btn.value == "C") {
@@ -29,5 +29,5 @@ function calc(btn) {
     else {
         document.calculator.display.value += btn.value;
     }
-    document.calculator.variableDisplay.value = "x = " + eval("x") + ", y = " + eval("y");
+    document.calculator.variableDisplay.value = "var: x = " + eval("x") + ", y = " + eval("y");
 }
