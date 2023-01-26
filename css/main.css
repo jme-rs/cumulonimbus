@@ -23,7 +23,7 @@ body {
             rgb(240, 240, 240) 5px);
     background-size: 1024px 1024px;
     align-items: center;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 a {
