@@ -16,7 +16,6 @@ function activateItem() {
 }
 
 function applyHorizontalScroll() {
-    var moving;
     var speed = 40;
     $('.horizontal-scroll').mousewheel(function (event, mov) {
         var moving = $(this).scrollLeft() - mov * speed;
@@ -30,6 +29,7 @@ function initSearchButton() {
     var searchButton = document.getElementById("searchButton");
     searchButton.addEventListener('click', function () {
         document.getElementById("searchLabel").classList.toggle("active");
+        document.getElementById("globalHeader").classList.toggle("active");
     });
     console.log("initSearchButton");
 }

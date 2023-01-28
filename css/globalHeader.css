@@ -5,6 +5,12 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    z-index: 128;
+    transition: .4s;
+}
+
+#globalHeader.active {
+    margin-bottom: 40px;
 }
 
 .headerLabel {
@@ -136,6 +142,22 @@
     display: flex;
     background-color: rgb(0, 178, 198);
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: .4s;
+    height: 50px;
+
+    position: absolute;
+    top: 7px;
+}
+
+#searchLabel.active {
+    transform: translateY(40px);
+}
+/* #searchLabel {
+    display: flex;
+    background-color: rgb(0, 178, 198);
+    justify-content: center;
     width: 100%;
 
     visibility: hidden;
@@ -147,11 +169,12 @@
     visibility: visible;
     height: 34px;
     padding: 4px 0 0;
-}
+} */
 
 .searchHolder {
     max-width: 1024px;
     width: 100%;
+    height: min-content;
     display: flex;
     justify-content: right;
     padding: 0 16px 0 0;
