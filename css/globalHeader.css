@@ -79,28 +79,37 @@
 .tabItem {
     color: white;
     opacity: 0.6;
-    margin: 8px 16px 4px;
+    /* margin: 8px 16px 4px;
+    /padding: 8px 16px 4px; */
+    margin: 8px 10px 0;
+    padding: 0 6px 4px;
     align-items: center;
     white-space: nowrap;
     display: flex;
     transition-duration: 180ms;
 }
 
-.tabItem:hover {
-    opacity: 1;
+@media (hover: hover) {
+    .tabItem:hover {
+        opacity: 1;
+    }
+}
+
+@media (hover: none) {
+    .tabItem:active {
+        opacity: 1;
+    }
 }
 
 .isActive {
     opacity: 1;
-    /* margin: 8px 16px 4px; */
-    /* border-bottom: 4px solid white; */
     position: relative;
 }
 
 .isActive::after {
     background-color: white;
     border-radius: 4px 4px 0 0;
-    bottom: -4px;
+    bottom: 0;
     content: "";
     height: 4px;
     left: 0;

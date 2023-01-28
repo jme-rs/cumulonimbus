@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .calculator {
-    width:min-content;
+    width: min-content;
     /* border: 1px solid black; */
     padding: 5px;
     text-align: center;
@@ -40,13 +40,22 @@
     color: rgb(60, 60, 60);
 }
 
-.calcButton:active{
-    background-color: rgb(129, 129, 129);
-    transition-duration: 200ms;
+@media (hover: hover) {
+    .calcButton:active {
+        background-color: rgb(129, 129, 129);
+        transition-duration: 200ms;
+    }
+
+    .calcButton:hover {
+        opacity: .6;
+    }
 }
 
-.calcButton:hover {
-    opacity: .6;
+@media (hover: none) {
+    .calcButton:active {
+        background-color: rgb(129, 129, 129);
+        transition-duration: 100ms;
+    }
 }
 
 .cOperand {
