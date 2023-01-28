@@ -26,11 +26,18 @@ function applyHorizontalScroll() {
     console.log("applyHorizontalScroll");
 }
 
-function setSearchButton() {
-    document.getElementById("searchButton").addEventListener('click', function () {
-        alert("検索はいつか実装する");
+function initSearchButton() {
+    var searchButton = document.getElementById("searchButton");
+    searchButton.addEventListener('click', function () {
+        document.getElementById("searchLabel").classList.toggle("active");
     });
-    console.log(document.getElementById("setSearchButton"));
+    console.log("initSearchButton");
+}
+
+function pressEnter(keyCode) {
+    if (13 === keyCode) {
+        alert("検索は未実装");
+    }
 }
 
 function itemHoverEvent() {
@@ -57,15 +64,18 @@ function loadHeader() {
 
             //
             var int = restxt.getElementById("globalHeader");
-            document.getElementById("globalHeader").innerHTML = int.outerHTML;
+            document.getElementById("globalHeader").innerHTML = int.innerHTML;
+            //
+            var int = restxt.getElementById("searchLabel");
+            document.getElementById("searchLabel").innerHTML = int.innerHTML;
             //
             var int = restxt.getElementById("navigationTab");
-            document.getElementById("navigationTab").innerHTML = int.outerHTML;
+            document.getElementById("navigationTab").innerHTML = int.innerHTML;
             //
             console.log("loadHeader");
 
 
-            setSearchButton();
+            initSearchButton();
             applyHorizontalScroll();
             activateItem();
             // itemHoverEvent();
