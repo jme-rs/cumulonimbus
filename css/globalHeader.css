@@ -41,6 +41,20 @@
 .loupeIconBox {
     height: 32px;
     width: 32px;
+    opacity: .6;
+    transition-duration: 180ms;
+}
+
+@media (hover: hover) {
+    .loupeIconBox:hover {
+        opacity: 1;
+    }
+}
+
+@media (hover: none) {
+    .loupeIconBox:active {
+        opacity: 1;
+    }
 }
 
 .siteIconBox {
