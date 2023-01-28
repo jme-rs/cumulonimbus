@@ -36,7 +36,7 @@ function initSearchButton() {
 
 function pressEnter(keyCode) {
     if (13 === keyCode) {
-        alert("検索は未実装");
+        alert("検索は未実装\nこのスライドギミックが普通に難しい");
     }
 }
 
