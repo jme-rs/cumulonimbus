@@ -68,7 +68,7 @@ function loadHeader() {
             setSearchButton();
             applyHorizontalScroll();
             activateItem();
-            itemHoverEvent();
+            // itemHoverEvent();
             document.getElementsByTagName('body')[0].setAttribute('ontouchstart', '');
         }
     };

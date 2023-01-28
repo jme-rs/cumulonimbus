@@ -86,14 +86,26 @@
     transition-duration: 180ms;
 }
 
-.tabItem :active {
+.tabItem:hover {
     opacity: 1;
 }
 
 .isActive {
     opacity: 1;
-    margin: 8px 16px 0;
-    border-bottom: 4px solid white;
+    /* margin: 8px 16px 4px; */
+    /* border-bottom: 4px solid white; */
+    position: relative;
+}
+
+.isActive::after {
+    background-color: white;
+    border-radius: 4px 4px 0 0;
+    bottom: -4px;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
 }
 
 .shadow {
