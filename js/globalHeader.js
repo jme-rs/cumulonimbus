@@ -30,6 +30,7 @@ function initSearchButton() {
     searchButton.addEventListener('click', function () {
         document.getElementById("searchLabel").classList.toggle("active");
         document.getElementById("globalHeader").classList.toggle("active");
+        document.getElementsByClassName("searchHolder")[0].classList.toggle("active");
     });
     console.log("initSearchButton");
 }
