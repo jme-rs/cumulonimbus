@@ -20,13 +20,15 @@
     border: 1px solid black;
     border-bottom: 8px solid rgb(127, 126, 126);
     border-radius: 4px;
-    transition-duration: 100ms;
+    transition-duration: 0.3s;
+    color: black;
 }
 
 #d3:active {
+    transform: translateY(7px);
     background-color: rgb(156, 156, 156);
     border-bottom: 1px solid black;
-    top: 7px;
+    height: 29px;
 }
 
 #d4 {
