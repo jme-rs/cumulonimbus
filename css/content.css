@@ -17,7 +17,7 @@
     padding: 8px;
     border-radius: 16px;
     border: 1px solid gainsboro;
-    box-shadow: 0 0 6px rgba(100, 100, 100, 0.2);
+    box-shadow: 0 0 px rgba(0, 0, 0, 0.5);
 }
 
 .templateBoard {
@@ -64,7 +64,7 @@
     bottom: 0;
     left: 0;
     border-radius: 16px;
-    box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 8px 4px rgba(0, 0, 0, 0.5);
 }
 
 .sourceViewBox {

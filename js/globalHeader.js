@@ -5,10 +5,12 @@ function activateItem() {
         var urlNow = items.item(i).getAttribute("href");
         if (urlNow == path) {
             items.item(i).classList.add("isActive");
+            items.item(i).setAttribute("tabindex", "-1");
             break;
         }
         else if (path == "" && urlNow == "index.html") {
             items.item(i).classList.add("isActive");
+            items.item(i).setAttribute("tabindex", "-1");
             break;
         }
     }
@@ -37,7 +39,7 @@ function initSearchButton() {
 
 function pressEnter(keyCode) {
     if (13 === keyCode) {
-        alert("検索は未実装\nこのスライドギミックが普通に難しい");
+        alert("検索は未実装\n");
     }
 }
 
