@@ -16,8 +16,8 @@
     margin: 16px 8px;
     padding: 8px;
     border-radius: 16px;
-    border: 1px solid gainsboro;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid gainsboro; */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .templateBoard {
@@ -68,17 +68,18 @@
 }
 
 .sourceViewBox {
+    border: 1px solid rgb(166, 166, 166);
     max-width: min-content;
     max-height: 400px;
-    overflow-x: auto;
+    min-width: 256px;
     overflow: scroll;
+    margin: 8px 4px;
+    padding-top: 4px;
+    padding-left: 3rem;
 }
 
 @media (max-width: 500px) {
     .sourceViewBox {
-        max-width: min-content;
         max-height: 300px;
-        overflow-x: auto;
-        overflow: scroll;
     }
 }

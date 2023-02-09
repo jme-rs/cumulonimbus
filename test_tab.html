@@ -21,8 +21,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp.min.css">
 
-    <link rel="stylesheet" href="css/prism.css">
+
     <link rel="stylesheet" href="css/test_tab.css">
+
+
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/prism.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/prettify.css"> -->
+    <link rel="stylesheet" href="css/desert.css">
+    <script src="js/prettify.js"></script>
+    <script src="js/sourceLoader.js"></script>
+
 
 </head>
 
@@ -53,11 +63,12 @@
         </div>
 
 
+
         <div class="templateBoard">
             <div id="d1">
                 <input id="d2" type="text" value="enter a string">
                 <div id="d4">
-                    <input id="d3" type="button" value="push" onclick="d3click()"> 
+                    <input id="d3" type="button" value="push" onclick="d3click()">
                 </div>
             </div>
             <div class="templatePanel">
@@ -65,24 +76,49 @@
         </div>
 
         <div class="templatePanel">
-            <pre class="sourceViewBox language-java line-numbers">
-                <code data-path="text/Test2.java"></code>
-            </pre>
-            <pre class="sourceViewBox language-c line-numbers">
-                <code data-path="text/SPutil.h"></code>
-            </pre>
-            <p>?? "space"#include</p>
-            <pre class="sourceViewBox language-c line-numbers">
-                <code data-path="text/SPutil.c"></code>
-            </pre>
-            <pre class="sourceViewBox language-c line-numbers">
-                <code data-path="text/FFT.h"></code>
-            </pre>
-            <pre class="sourceViewBox language-c line-numbers">
-                <code data-path="text/FFT.c"></code>
-            </pre>
-            <p>*=2 --> <<1</p>
         </div>
+
+
+
+
+
+        <div class="templatePanel">
+            <p>prims</p>
+            <pre class="sourceViewBox line-numbers language-java"><code data-path="text/Test2.java"></code></pre>
+            <pre class="sourceViewBox line-numbers language-c"><code data-path="text/SPutil.c"></code></pre>
+            <pre class="sourceViewBox line-numbers language-c"><code>#include "FFT.h"
+
+int calc_log(int n) {
+    int result = 0;
+    while (1 < n) {
+        n = n >> 1;
+        ++result;
+    }
+    return result;
+}</code></pre>
+        </div>
+
+
+
+        <div class="templatePanel">
+            <p>google code-prettify</p>
+            <pre class="sourceViewBox prettyprint linenums lang-java"><code data-path="text/Test2.java"></code></pre>
+            <pre class="sourceViewBox prettyprint linenums lang-c"><code data-path="text/FFT.c"></code></pre>
+            <pre class="sourceViewBox prettyprint linenums"><code>#include "FFT.h"
+
+int calc_log(int n) {
+    int result = 0;
+    while (1 < n) {
+        n = n >> 1;
+        ++result;
+    }
+    return result;
+}</code></pre>
+        </div>
+
+
+
+
 
         <div class="templatePanel">
             <div class="imgBox"><img src="picture/mc/over.png" alt=""></div>
@@ -93,8 +129,9 @@
 
     </div>
 
-    <script src="js/prism.js" defer></script>
+    <!-- <script src="js/prism.js" defer></script> -->
     <script src="js/test_tab.js"></script>
+    <script>syntaxHighlight();</script>
 
 </body>
 
