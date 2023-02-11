@@ -145,6 +145,7 @@
     align-items: center;
     width: 100%;
     transition: .4s;
+    -webkit-transition: -webkit-transform .4s;
     height: 44px;
     position: absolute;
     top: 35px;
