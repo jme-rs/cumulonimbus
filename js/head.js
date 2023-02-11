@@ -4,6 +4,9 @@ function headLoader() {
     head.insertAdjacentHTML('beforeEnd', '<meta charset="utf-8">');
     head.insertAdjacentHTML('beforeEnd', '<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">');
     head.insertAdjacentHTML('beforeEnd', '<meta name="theme-color" content="#00B2C6">');
+    head.insertAdjacentHTML('beforeEnd', '<meta name="apple-mobile-web-app-capable" content="yes">');
+    head.insertAdjacentHTML('beforeEnd', '<meta name="apple-mobile-web-app-status-bar-style" content="default">');
+
     head.insertAdjacentHTML('beforeEnd', '<link rel="icon" href="picture/ei-cloud.png">');
 
     head.insertAdjacentHTML('beforeEnd', '<link rel="preconnect" href="https://fonts.googleapis.com">');
