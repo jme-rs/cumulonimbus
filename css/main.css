@@ -23,6 +23,7 @@ body {
     align-items: center;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
 }
 
 a {
