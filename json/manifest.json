@@ -1,0 +1,7 @@
+{
+    "name": "cumulonimbus",
+    "short_name": "cumulonimbus",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+}
