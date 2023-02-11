@@ -17,6 +17,9 @@ function headLoader() {
     head.insertAdjacentHTML('beforeEnd', '<link rel="stylesheet" href="css/main.css">');
     head.insertAdjacentHTML('beforeEnd', '<link rel="stylesheet" href="css/globalHeader.css">');
     head.insertAdjacentHTML('beforeEnd', '<link rel="stylesheet" href="css/content.css">');
+
+    
+    console.log("headLoader");
 }
 
 headLoader();
