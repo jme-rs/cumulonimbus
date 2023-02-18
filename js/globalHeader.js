@@ -54,6 +54,17 @@ function itemHoverEvent() {
     console.log("itemHoverEvent");
 }
 
+function scrollTab() {
+    var btn = $(".isActive")
+    var btnLeft = btn.position().left;
+    var btnCenter = btn.outerWidth(true) / 2;
+
+    var bar = $(".navigationTabContainer");
+    var barCenter = bar.outerWidth(true) / 2;
+    bar.scrollLeft(btnLeft + btnCenter - barCenter);
+    console.log("scrollTab");
+}
+
 function loadHeader() {
     var xhr = new XMLHttpRequest(),
         method = "GET",
@@ -82,6 +93,7 @@ function loadHeader() {
             applyHorizontalScroll();
             activateItem();
             // itemHoverEvent();
+            scrollTab();
             document.getElementsByTagName('body')[0].setAttribute('ontouchstart', '');
         }
     };
