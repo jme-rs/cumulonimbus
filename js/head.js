@@ -29,4 +29,8 @@ function headLoader() {
     console.log("headLoader");
 }
 
+function bodyLoader() {
+    var body = document.body;
+}
+
 headLoader();

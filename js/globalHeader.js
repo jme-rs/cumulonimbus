@@ -95,6 +95,7 @@ function loadHeader() {
             // itemHoverEvent();
             scrollTab();
             document.getElementsByTagName('body')[0].setAttribute('ontouchstart', '');
+            document.body.style.visibility = "visible";
         }
     };
     xhr.send();

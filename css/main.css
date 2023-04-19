@@ -24,6 +24,7 @@ body {
     align-items: center;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
+    visibility: hidden;
 }
 
 a {
