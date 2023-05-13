@@ -5,12 +5,12 @@ function activateItem() {
         var urlNow = items.item(i).getAttribute("href");
         if (urlNow == path) {
             items.item(i).classList.add("isActive");
-            items.item(i).setAttribute("tabindex", "-1");
+            items.item(i).removeAttribute("href");
             break;
         }
         else if (path == "" && urlNow == "index.html") {
             items.item(i).classList.add("isActive");
-            items.item(i).setAttribute("tabindex", "-1");
+            items.item(i).removeAttribute("href");
             break;
         }
     }
@@ -39,7 +39,10 @@ function initSearchButton() {
 
 function pressEnter(keyCode) {
     if (13 === keyCode) {
-        alert("検索は未実装\n");
+        alert("ページ内検索は未実装\ngoogleを開きます");
+        var inString = document.getElementsByClassName("searchBox").item(0).value;
+        var keywords = inString.split(" ");
+        window.open("https://www.google.com/search?q=" + keywords.join("+"), '_blank');
     }
 }
 
